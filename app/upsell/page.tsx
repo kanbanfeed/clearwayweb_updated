@@ -26,6 +26,7 @@ const ADDONS = [
     name: 'Basic SEO setup',
     price: 150,
     stripeLink: 'https://buy.stripe.com/3cIfZg26nfUs55xfXj7Vm0Z'
+    
   }
 ]
 

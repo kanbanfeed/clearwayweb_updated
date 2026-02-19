@@ -7,25 +7,25 @@ const ADDONS = [
     id: 'logo',
     name: 'Logo Pack',
     price: 50,
-    stripeLink: 'https://buy.stripe.com/test_eVqbJ34U81JI8wK7hI3cc0i'
+    stripeLink: 'https://buy.stripe.com/28E8wOdP58s0cxZbH37Vm0W'
   },
   {
     id: 'priority',
     name: 'Priority 24-hour build',
     price: 75,
-    stripeLink: 'https://buy.stripe.com/test_28E28t2M03RQaES9pQ3cc0j'
+    stripeLink: 'https://buy.stripe.com/00w00i26nfUs9lNcL77Vm0X'
   },
   {
     id: 'service',
     name: 'Additional service page',
     price: 100,
-    stripeLink: 'https://buy.stripe.com/test_00wfZj3Q4gECbIW8lM3cc0k'
+    stripeLink: 'https://buy.stripe.com/9B64gy5iz5fO41tdPb7Vm0Y'
   },
   {
     id: 'seo',
     name: 'Basic SEO setup',
     price: 150,
-    stripeLink: 'https://buy.stripe.com/test_cNi00ldqE3RQbIW6dE3cc0l'
+    stripeLink: 'https://buy.stripe.com/3cIfZg26nfUs55xfXj7Vm0Z'
   }
 ]
 

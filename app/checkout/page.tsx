@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 export default function Checkout() {
   useEffect(() => {
-    window.location.href = "https://buy.stripe.com/test_7sY9AV0DSewu9AOdG63cc0h";
+    window.location.href = "https://buy.stripe.com/9B6eVc5iz6jS69B9yV7Vm0V";
   }, []);
 
   return (

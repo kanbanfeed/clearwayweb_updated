@@ -44,13 +44,22 @@ function TrustBar() {
 
 function Wordmark() {
   return (
-    <div className="w-full bg-white border-b border-charcoal-100 py-4 px-6">
-      <div className="max-w-5xl mx-auto">
-        <span className="text-charcoal-900 font-semibold text-base tracking-tight">
-          Clearway<span className="text-accent-600">Web</span>
-        </span>
-      </div>
-    </div>
+    <div className="w-full bg-white border-b border-charcoal-100 py-2 px-6">
+  <div className="max-w-5xl mx-auto flex items-center">
+    <Image
+      src="/clearwayweb_logo.jpeg"
+      alt="Clearway Web Logo"
+      width={80}
+      height={40}
+      className="object-contain"
+      priority
+    />
+    <span className="text-charcoal-900 font-semibold text-base tracking-tight">
+      Clearway<span className="text-accent-600">Web</span>
+    </span>
+  </div>
+</div>
+
   )
 }
 
@@ -534,6 +543,14 @@ function Footer() {
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
           <div className="space-y-1.5">
+            <Image
+              src="/clearwayweb_logo.jpeg"
+              alt="Clearway Web Logo"
+              width={80}
+              height={40}
+              className="object-contain"
+              priority
+            />
             <p className="font-semibold text-charcoal-900 text-sm">
               Clearway<span className="text-accent-600">Web</span>
             </p>

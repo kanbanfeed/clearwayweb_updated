@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'ClearwayWeb – Professional Websites for Service Businesses',
-  description: 'Get a professional 5-page website delivered in 72 hours for $250. Built for HVAC, contractors, and local service businesses.',
-  keywords: 'website for service businesses, HVAC website, contractor website, small business website, affordable website',
+  title: 'ClearwayWeb — Online Presence Management for Local Service Businesses',
+  description: 'Website, Google Business Profile, and 24/7 customer inquiry handling. Fully managed for $249/month. No setup fee. Cancel anytime. Serving HVAC, plumbing, dental, auto repair, and landscaping businesses across the US.',
+  keywords: 'online presence management, local business website, Google Business Profile, HVAC website, plumbing website, dental website, auto repair website, landscaping website',
   robots: 'index, follow',
   openGraph: {
-    title: 'ClearwayWeb – Professional Websites for Service Businesses',
-    description: 'Get a professional 5-page website delivered in 72 hours for $250.',
+    title: 'ClearwayWeb — Online Presence Management for Local Service Businesses',
+    description: 'Website, Google Business Profile, and 24/7 customer inquiry handling. Fully managed for $249/month. No setup fee. Cancel anytime.',
     type: 'website',
   },
 }

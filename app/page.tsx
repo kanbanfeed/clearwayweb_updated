@@ -82,7 +82,7 @@ function Hero() {
   const scroll = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 
   return (
-    <section className="w-full bg-white py-20 px-6 md:py-28">
+    <section className="w-full bg-white py-10 px-6 md:py-12">
       <div className="max-w-5xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 bg-accent-50 text-accent-700 text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full border border-accent-100 mb-6">
           177+ local service businesses now getting found online
@@ -92,27 +92,42 @@ function Hero() {
           className="text-4xl md:text-5xl lg:text-[3.25rem] font-serif text-charcoal-900 leading-tight mb-5"
           style={{ fontFamily: "'DM Serif Display', Georgia, serif" }}
         >
-          When people search for your business<br className="hidden md:block" /> online, they should find you.
+          Your competitors are showing up on Google. You are not
         </h1>
 
         <p className="text-lg text-charcoal-600 leading-relaxed max-w-2xl mx-auto font-light mb-8">
-          We build and manage your entire online presence — website, Google listing, and 24/7 customer inquiry handling. You keep doing your work.
+          We build + fully manage your website, Google Business Profile, and 24/7 WhatsApp handler in 48 hours. Everything done for you while you work on jobs. $249 per month. Cancel anytime.
         </p>
-
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
-          <button
+          <a
+            href="https://buy.stripe.com/5kQ9AS26n0ZyfKb8uR7Vm13"
+            className="inline-flex items-center justify-center gap-2 border border-charcoal-200 hover:border-charcoal-400 text-charcoal-700 font-semibold text-base px-8 py-4 rounded-lg w-full sm:w-auto transition-colors"
+            >
+            Get Started — $249/month
+          </a>
+        </div>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
+          {/* <button
             onClick={() => scroll('how-it-works')}
             className="inline-flex items-center justify-center gap-2 bg-accent-600 hover:bg-accent-700 text-white font-semibold text-base px-8 py-4 rounded-lg shadow-sm w-full sm:w-auto transition-colors"
           >
             See How It Works
-          </button>
-          <a
-            href="https://buy.stripe.com/5kQ9AS26n0ZyfKb8uR7Vm13"
-            className="inline-flex items-center justify-center gap-2 border border-charcoal-200 hover:border-charcoal-400 text-charcoal-700 font-semibold text-base px-8 py-4 rounded-lg w-full sm:w-auto transition-colors"
-          >
-            Get Started — $249/month
-          </a>
+          </button> */}
+           
+
+          <a href="https://wa.me/14155238886?text=AUDIT" className="inline-flex items-center justify-center gap-2 bg-accent-600 text-white font-semibold text-base px-8 py-2 rounded-lg w-full sm:w-auto">
+          Text ‘AUDIT’ to +1 415 523 8886 for free 60-second visibility report
+        </a>
+
+        <a href="https://cal.com/clearwayweb/clearwayweb-discovery-call" className="inline-flex items-center justify-center gap-2 border border-charcoal-200 text-charcoal-700 font-semibold text-base px-8 py-2 rounded-lg w-full sm:w-auto">
+          Book 10-min discovery call
+        </a>
+
+        <a href="https://wa.me/14155238886" className="inline-flex items-center justify-center gap-2 bg-charcoal-900 text-white font-semibold text-base px-8 py-2 rounded-lg w-full sm:w-auto">
+          See live WhatsApp demo
+        </a>
         </div>
+        
 
         <p className="text-xs text-charcoal-400">
           No setup fee &nbsp;·&nbsp; No contracts &nbsp;·&nbsp; Cancel anytime
@@ -122,6 +137,36 @@ function Hero() {
   )
 }
 
+function PricingHighlight() {
+  return (
+    <section className="w-full bg-charcoal-50 py-20 px-6 border-y border-charcoal-100">
+      <div className="max-w-3xl mx-auto text-center">
+
+        <h2 className="text-3xl font-serif text-charcoal-900 mb-6">
+          $249 per month – Everything Included, Nothing Extra
+        </h2>
+
+        <div className="text-charcoal-600 text-base space-y-2 text-left mb-6">
+          <p>• Mobile website live in 48 hours</p>
+          <p>• Google Business Profile claimed, optimized & posted to every month</p>
+          <p>• 24/7 WhatsApp handler in your business name</p>
+          <p>• Automatic review requests + responses</p>
+          <p>• 12 social posts per month</p>
+          <p>• Monthly text report with results</p>
+        </div>
+
+        <p className="font-semibold text-charcoal-900">
+          5+ new inquiries in first 30 days or your first month is FREE.
+        </p>
+
+        <p className="text-charcoal-500 mt-2">
+          Cancel anytime. No long contracts.
+        </p>
+
+      </div>
+    </section>
+  )
+}
 // ─── Problem ──────────────────────────────────────────────────────────────────
 
 function Problem() {
@@ -332,8 +377,14 @@ function LiveDemo() {
 
         <div className="bg-charcoal-50 border border-charcoal-100 rounded-xl p-10">
           <div className="text-3xl md:text-4xl font-bold text-charcoal-900 tracking-wide mb-3">
-            [Number Coming Soon]
+            +1 415 523 8886
           </div>
+          <a
+            href="https://wa.me/14155238886"
+            className="inline-flex items-center justify-center mt-4 bg-accent-600 text-white px-6 py-3 rounded-lg"
+          >
+            Text it right now
+          </a>
           <p className="text-xs text-charcoal-400">This is a live demo. Text it right now.</p>
         </div>
       </div>
@@ -457,7 +508,11 @@ function CaseStudies() {
                   <p className="text-[10px] font-bold text-accent-600 tracking-widest uppercase mb-1.5">After 30 Days</p>
                   <p className="text-charcoal-700 text-sm font-light leading-relaxed">{c.after}</p>
                 </div>
+                
               </div>
+              <p className="text-accent-600 text-center py-4 text-sm ">
+                Want the same results for your business? Text ‘AUDIT’ to +1 415 523 8886
+              </p>
             </div>
           ))}
         </div>
@@ -730,15 +785,21 @@ function FinalCTA() {
           Stop being invisible. Start getting found.
         </h2>
 
-        <a
-          href="/onboarding"
-          className="inline-flex items-center justify-center gap-2.5 bg-accent-600 hover:bg-accent-700 text-white font-semibold text-base px-10 py-4 rounded-lg shadow-sm transition-colors mt-8"
-        >
-          Get Started — $249/month
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </a>
+        <div className="flex justify-center gap-3 items-center mt-8">
+
+          <a href="https://wa.me/14155238886?text=AUDIT" className="bg-accent-600 text-white px-8 py-4 rounded-lg w-full sm:w-auto">
+            Text ‘AUDIT’
+          </a>
+
+          <a href="https://cal.com/clearwayweb/clearwayweb-discovery-call" className="border border-charcoal-300 px-8 py-4 rounded-lg w-full sm:w-auto">
+            Book call
+          </a>
+
+          <a href="https://wa.me/14155238886" className="bg-charcoal-900 text-white px-8 py-4 rounded-lg w-full sm:w-auto">
+            Live demo
+          </a>
+
+        </div>
 
         <p className="text-xs text-charcoal-400 mt-5">
           No setup fee &nbsp;·&nbsp; No contracts &nbsp;·&nbsp; Cancel anytime
@@ -777,7 +838,11 @@ function Footer() {
               <a href="/terms" className="text-charcoal-400 hover:text-charcoal-700 text-xs transition-colors">
                 Terms
               </a>
+
             </div>
+            <p className="text-charcoal-500 text-sm mt-2">
+              $249/month – Everything Included
+            </p>
           </div>
         </div>
 
@@ -798,6 +863,7 @@ export default function Home() {
     <main>
       <Nav />
       <Hero />
+      <PricingHighlight />
       <Problem />
       <HowItWorks />
       <WhatsIncluded />

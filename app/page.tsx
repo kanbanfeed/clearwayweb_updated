@@ -44,7 +44,7 @@ function Nav() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden p-2 text-charcoal-700"
+          className="md:hidden p-1 text-charcoal-700"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -58,7 +58,7 @@ function Nav() {
       </div>
 
       {open && (
-        <div className="md:hidden bg-white border-t border-charcoal-100 px-6 py-4 flex flex-col gap-4 text-sm font-medium text-charcoal-700">
+        <div className="md:hidden bg-white border-t border-charcoal-100 px-6 py-2 flex flex-col gap-4 text-sm font-medium text-charcoal-700">
           <button onClick={() => scroll('how-it-works')} className="text-left">How It Works</button>
           <button onClick={() => scroll('whats-included')} className="text-left">What's Included</button>
           <button onClick={() => scroll('sample-sites')} className="text-left">See Examples</button>

@@ -901,7 +901,7 @@ export default function Home() {
         <a href="https://wa.me/14155238886?text=AUDIT" className="underline font-semibold ml-1">
           Text ‘AUDIT’
         </a>
-        <p className="text-sm font-semibold text-white mt-1">
+        <p className="hidden md:block text-sm font-semibold text-white mt-1">
           Full handler in your business name goes live in 48 hours after signup.
         </p>
       </div>

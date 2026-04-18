@@ -82,9 +82,9 @@ function Hero() {
   const scroll = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 
   return (
-    <section className="w-full bg-white py-6 px-6 md:py-2">
+    <section className="w-full bg-white py-2 px-6 md:py-2">
       <div className="max-w-5xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 bg-accent-50 text-accent-700 text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full border border-accent-100 mb-6">
+        <div className="inline-flex items-center gap-2 bg-accent-50 text-accent-700 text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full border border-accent-100 mb-2">
           177+ local service businesses now getting found online
         </div>
 
@@ -95,7 +95,7 @@ function Hero() {
           Your competitors are showing up on Google. You are not
         </h1>
 
-        <p className="text-lg text-charcoal-600 leading-relaxed max-w-2xl mx-auto font-light mb-4">
+        <p className="text-xl md:text-lg text-charcoal-600 leading-relaxed max-w-2xl mx-auto font-light mb-4">
           We build + fully manage your website, Google Business Profile, and 24/7 WhatsApp handler in 48 hours. Everything done for you while you work on jobs.
         </p>
         <div className="mt-2 mb-6">

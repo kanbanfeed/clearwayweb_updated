@@ -82,22 +82,33 @@ function Hero() {
   const scroll = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 
   return (
-    <section className="w-full bg-white py-8 px-6 md:py-10">
+    <section className="w-full bg-white py-6 px-6 md:py-2">
       <div className="max-w-5xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 bg-accent-50 text-accent-700 text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full border border-accent-100 mb-6">
           177+ local service businesses now getting found online
         </div>
 
         <h1
-          className="text-4xl md:text-5xl lg:text-[3.25rem] font-serif text-charcoal-900 leading-tight mb-5"
+          className="text-4xl md:text-5xl lg:text-[3.25rem] font-serif text-charcoal-900 leading-tight mb-3"
           style={{ fontFamily: "'DM Serif Display', Georgia, serif" }}
         >
           Your competitors are showing up on Google. You are not
         </h1>
 
-        <p className="text-lg text-charcoal-600 leading-relaxed max-w-2xl mx-auto font-light mb-8">
-          We build + fully manage your website, Google Business Profile, and 24/7 WhatsApp handler in 48 hours. Everything done for you while you work on jobs. $249 per month. Cancel anytime.
+        <p className="text-lg text-charcoal-600 leading-relaxed max-w-2xl mx-auto font-light mb-4">
+          We build + fully manage your website, Google Business Profile, and 24/7 WhatsApp handler in 48 hours. Everything done for you while you work on jobs.
         </p>
+        <div className="mt-2 mb-6">
+          <p className="text-xl font-bold text-charcoal-900">
+            $249 per month – Everything Included, Cancel Anytime
+          </p>
+          <p className="text-sm text-charcoal-700 mt-2">
+            • Website + Google Profile + 24/7 WhatsApp handler in 48 hours
+          </p>
+          <p className="text-sm font-semibold text-charcoal-900">
+            • 5+ new inquiries in first 30 days or first month FREE
+          </p>
+        </div>
         {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
           <a
             href="https://buy.stripe.com/5kQ9AS26n0ZyfKb8uR7Vm13"
@@ -106,7 +117,7 @@ function Hero() {
             Get Started — $249/month
           </a>
         </div> */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-2">
           {/* <button
             onClick={() => scroll('how-it-works')}
             className="inline-flex items-center justify-center gap-2 bg-accent-600 hover:bg-accent-700 text-white font-semibold text-base px-8 py-4 rounded-lg shadow-sm w-full sm:w-auto transition-colors"
@@ -117,7 +128,9 @@ function Hero() {
 
           <a href="https://wa.me/14155238886?text=AUDIT" className="inline-flex items-center justify-center gap-2 bg-accent-600 text-white font-semibold text-base px-8 py-2 rounded-lg w-full sm:w-auto">
           Text ‘AUDIT’ to +1 415 523 8886 for free 60-second visibility report
+          
         </a>
+        
 
         <a href="https://cal.com/clearwayweb/clearwayweb-discovery-call" className="inline-flex items-center justify-center gap-2 border border-charcoal-200 text-charcoal-700 font-semibold text-base px-8 py-2 rounded-lg w-full sm:w-auto">
           Book 10-min discovery call
@@ -127,7 +140,9 @@ function Hero() {
           See sample handler in action
         </a>
         </div>
-        
+        <p className="text-sm font-semibold text-charcoal-700">
+          Full handler in your business name goes live in 48 hours after signup.
+        </p>
 
         <p className="text-xs text-charcoal-400">
           No setup fee &nbsp;·&nbsp; No contracts &nbsp;·&nbsp; Cancel anytime
@@ -145,10 +160,6 @@ function PricingHighlight() {
         <h2 className="text-3xl font-serif text-charcoal-900 mb-6">
           $249 per month – Everything Included, Cancel Anytime
         </h2>
-        <div className='text-xl font-serif mb-8'>
-          Website + Google Business Profile + 24/7 WhatsApp handler in 48 hours
-          5+ new inquiries in first 30 days or your first month is FREE”
-        </div>
         <div className="text-charcoal-600 text-bold text-base space-y-2 text-left mb-6">
           <p>• Mobile website live in 48 hours</p>
           <p>• Google Business Profile claimed, optimized & posted to every month</p>
@@ -388,7 +399,7 @@ function LiveDemo() {
           >
             Text it right now
           </a>
-          <p className="text text-charcoal-400 mt-6">Text any customer-style question and see the auto-reply. Full handler in your name goes live in 48 hours after signup</p>
+          <p className="text text-charcoal-400 mt-6">Text any customer-style question and see the auto-reply. Full handler in your name goes live in 48 hours after signup.</p>
         </div>
       </div>
     </section>
@@ -788,10 +799,11 @@ function FinalCTA() {
           Stop being invisible. Start getting found.
         </h2>
 
-        <div className="flex justify-center gap-3 items-center mt-8">
+        <div className="flex justify-center gap-3 items-center mt-4">
 
           <a href="https://wa.me/14155238886?text=AUDIT" className="bg-accent-600 text-white px-8 py-4 rounded-lg w-full sm:w-auto">
             Text ‘AUDIT’
+            
           </a>
 
           <a href="https://cal.com/clearwayweb/clearwayweb-discovery-call" className="border border-charcoal-300 px-8 py-4 rounded-lg w-full sm:w-auto">
@@ -807,6 +819,9 @@ function FinalCTA() {
         <p className="text-xs text-charcoal-400 mt-5">
           $249/mo – Website + Google + 24/7 WhatsApp handler.  
           5+ new inquiries in 30 days or first month FREE.
+        </p>
+        <p className="text-sm font-semibold text-charcoal-700 mt-2">
+              Full handler in your business name goes live in 48 hours after signup.
         </p>
       </div>
     </section>
@@ -880,12 +895,15 @@ export default function Home() {
       <FAQ />
       <FinalCTA />
       <Footer />
-      <div className="fixed bottom-0 left-0 w-full bg-charcoal-900 text-white text-center py-3 px-4 z-50 text-sm">
+      <div className="fixed bottom-0 left-0 w-full bg-charcoal-900 text-white text-center py-1 px-4 z-50 text-sm">
         $249/mo – Website + Google + 24/7 WhatsApp handler.  
         5+ new inquiries in 30 days or first month FREE.  
         <a href="https://wa.me/14155238886?text=AUDIT" className="underline font-semibold ml-1">
           Text ‘AUDIT’
         </a>
+        <p className="text-sm font-semibold text-white mt-1">
+          Full handler in your business name goes live in 48 hours after signup.
+        </p>
       </div>
     </main>
   )
